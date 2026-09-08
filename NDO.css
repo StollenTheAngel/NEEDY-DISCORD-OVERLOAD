@@ -123,6 +123,18 @@ a[href="https://support.discord.com"] svg, #app-mount > div.appAsidePanelWrapper
     border-inline-start:none;
 }
 
+.sidebarList__5e434 .scroller__629e4{
+    background:var(--nso-accent-3);
+}
+
+.bannerImage_f37cb1{
+  background:transparent;
+}
+
+.bannerImg_f37cb1{
+  position:relative;
+}
+
 /* FRIEND LIST */
 [aria-label="Friends"] .tabBody__133bf{
     background:url("https://raw.githubusercontent.com/StollenTheAngel/NEEDY-DISCORD-OVERLOAD/52cddb5b38b3557334378c2cc57029064c21f0f7/theme%20resources/tilebg.png") !important;
@@ -337,16 +349,22 @@ border-radius:5px
 /* BUTTONS */
 
 .button_a22cb0, .button_a22cb0.primary_a22cb0,
-.button_a22cb0:hover{
-    background:#f6e0f7;
+.button_a22cb0:hover,
+.container__37e49 button, .container__37e49 button:hover,
+.actionButtons_e131a9 button,
+.button_e131a9.buttonColor_e131a9{
+    background:#f6e0f7 !important;
     border-top:2px solid #fefbfe;
     border-left:2px solid #fefbfe;
     border-bottom:2px solid #b493e8;
     border-right:2px solid #815cdd;
-    color:#4d23cf;
+    color:#4d23cf !important;
 }
 
-.button_a22cb0:active, .button_a22cb0.primary_a22cb0:active{
+.button_a22cb0:active, .button_a22cb0.primary_a22cb0:active, 
+.container__37e49 button:active, 
+actionButtons_e131a9 button:active,
+.button_e131a9.buttonColor_e131a9:active{
     background:#f6e0f7;
     border-top:2px solid #815cdd;
     border-left:2px solid #815cdd;
@@ -396,3 +414,21 @@ border-radius:5px
     color:var(--nso-text-default);
 }
 
+/* USER PANEL */
+.panels__5e434{
+    border:5px solid var(--nso-border-1);
+    background:var(--nso-bg-4);
+    padding:5px;
+}
+
+.container__37e49.containerRtcOpened__37e49{
+    background:var(--nso-accent-2);
+    border:3px solid var(--nso-border-1);
+    border-radius:0px;
+}
+
+.wrapper_e131a9{
+    background:var(--nso-accent-3);
+    margin-bottom:2px;
+    border:3px solid var(--nso-border-1);
+}
