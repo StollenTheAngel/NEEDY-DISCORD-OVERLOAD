@@ -1,0 +1,398 @@
+/**
+ * @name NEEDY DISCORD OVERLOAD
+ * @author StollenTheAngel (angelicblades); some elements from NineX by Saltssaumure & 98.css by jdan
+ * @authorLink https://github.com/StollenTheAngel
+ * @description Discord theme based on the 9x-inspired interface featured in NEEDY STREAMER OVERLOAD. 
+ * @license AGPL-3.0-or-later
+ * @version 0.5
+ * @source 
+*/
+
+/* GENERAL */
+@import"https://saltthemerevivalproject.github.io/Squared/sq.min.css";
+
+@font-face{
+    font-family:'dinkie';
+    src:url('https://raw.githubusercontent.com/StollenTheAngel/NEEDY-DISCORD-OVERLOAD/8851a59482b7a1f91216a5f8abf07959a9337c00/theme%20resources/dinkie.ttf') format('truetype');
+    font-weight:normal;
+}
+
+:root{
+    --nso-bg-1:#fce1f1;
+    --nso-bg-2:#fcfcfc;
+    --nso-bg-3:#fcf0fc;
+    --nso-bg-4:#eecfef;
+    --nso-bg-5:#cce7f7;
+        --nso-bg-5-low:#cce7f7d5;
+
+    --nso-accent-1:#f0d1f1;
+    --nso-accent-2:#90f4e4;
+    --nso-accent-3:#fff8ff;
+    --nso-accent-4:#e3e3e3;
+    --nso-accent-5:#f7e0fa;
+    --nso-accent-6:#ea9fe7;
+
+    --nso-border-1:#4d23cf;
+    --nso-border-2:#5228ce;
+    --nso-border-3:#815bdb;
+
+    --text-default:#4d23cf;
+        --nso-text-default:#4d23cf;
+    --text-strong:#4d23cf;
+    --channels-default:#4d23cf;
+    --text-subtle:#4d23cf;
+    
+    --font-primary:'dinkie', Arial, sans-serif;
+    --font-display:'dinkie', Arial, sans-serif;
+}
+
+h1{
+    color:#4d23cf !important;
+}
+
+.chatContent_f75fb0{
+    background-color:var(--nso-bg-3);
+}
+
+/* HEADER */
+
+.bar_c38106,[aria-label="Channel header"]{
+background-color:var(--nso-bg-4) !important;
+outline:3px solid var(--nso-border-1);
+outline-offset:-3px;
+}
+
+.bar_c38106{
+    outline:5px solid var(--nso-border-1);
+}
+
+[aria-label="Minimize"] svg{
+    background:url("https://raw.githubusercontent.com/StollenTheAngel/NEEDY-DISCORD-OVERLOAD/8851a59482b7a1f91216a5f8abf07959a9337c00/theme%20resources/button_minimize.png");
+    background-size:contain;
+    color:transparent;
+    height:50%;
+    width:50%;
+}
+
+[aria-label="Maximize"] svg{
+    background:url("https://raw.githubusercontent.com/StollenTheAngel/NEEDY-DISCORD-OVERLOAD/8851a59482b7a1f91216a5f8abf07959a9337c00/theme%20resources/button_maximize.png");
+    background-size:contain;
+    color:transparent;
+    height:50%;
+    width:50%;
+}
+
+[aria-label="Close"] svg{
+    background:url("https://raw.githubusercontent.com/StollenTheAngel/NEEDY-DISCORD-OVERLOAD/8851a59482b7a1f91216a5f8abf07959a9337c00/theme%20resources/button_close.png");
+    background-size:contain;
+    color:transparent;
+}
+
+.bar_c38106 [aria-label="Close"] svg{
+    height:50%;
+    width:50%;
+}
+.winButtons_c38106{
+    gap:0px;
+}
+
+a[href="https://support.discord.com"] svg, #app-mount > div.appAsidePanelWrapper_a3002d > div > div.app_a3002d > div > div.layers__960e4.layers__160d8 > div > div > div > div.bar_c38106.theme-light.images-light > div.trailing_c38106 > a > div{
+    background:url("https://raw.githubusercontent.com/StollenTheAngel/NEEDY-DISCORD-OVERLOAD/0ed6c227e7dab4fbfdd9f712e4e4056cd8c8ac85/theme%20resources/icon_desktop_tooltip.png") !important;
+    order:2 !important;
+    background-size:cover !important;
+    color:transparent
+}
+
+.title_c38106 .defaultColor__4bd52{
+    color:#4d23cf;
+}
+
+/* SIDEBAR */
+[aria-label="Servers sidebar"]{
+    background-color:#f6e0f7;
+    border-right:2px solid #fdf4fd;
+    box-sizing:border-box;
+}
+
+.sidebar__5e434{
+    background-color:#f6e0f7;
+}
+
+/* CHANNEL LIST */
+.sidebarList__5e434{
+    border-inline-start:none;
+}
+
+/* FRIEND LIST */
+[aria-label="Friends"] .tabBody__133bf{
+    background:url("https://raw.githubusercontent.com/StollenTheAngel/NEEDY-DISCORD-OVERLOAD/52cddb5b38b3557334378c2cc57029064c21f0f7/theme%20resources/tilebg.png") !important;
+    background-size:50px 50px !important;
+}
+
+.nowPlayingColumn__133bf{
+    background:transparent;
+}
+
+.refresh-active-now .itemCard__7e549{
+    border-radius:0px;
+    box-shadow:none;
+    border:2px solid #dedede;
+    outline:2px solid #4d23cf;
+}
+
+.refresh-active-now .header__00943{
+    background:#dedede;
+    padding:2px 7px;
+    border:2px solid #4d23cf;
+    outline:3px solid #dedede;
+}
+
+.refresh-active-now .body__00943{
+    border:2px solid #4d23cf;
+    position:relative;
+    z-index:1;
+    bottom: -1px;
+}
+
+ .peopleList__5ec2f.scrollerBase_d125d2 {
+    overflow: auto !important;
+  }
+  
+  .peopleColumn__133bf .peopleList__5ec2f::-webkit-scrollbar-track-piece {
+    position: relative;
+    background:/*#a1bece;*/ #c5e8fb;
+    border-radius: 0px;
+  }
+
+  .peopleColumn__133bf .peopleList__5ec2f::-webkit-scrollbar-thumb{
+    background:/*#db8ed6;*/ #d586d5;
+    width:100%;
+  }
+
+  .peopleList__5ec2f .content_d125d2{
+    background:var(--nso-bg-2);
+    width:620px;
+    margin-left:auto;
+    margin-right:auto;
+    border-radius:10px;
+    padding-bottom:10px;
+  }
+  
+  .emptyCard__7e549{
+    background:transparent;
+  }
+
+/* CHAT */
+
+.subtitleContainer_f75fb0{
+    border:5px solid var(--nso-accent-2);
+}
+
+.children__9293f:after{
+    background:transparent !important;
+}
+
+.icon__9293f{
+    color:#4d23cf !important;
+}
+
+.scroller__36d07{
+border:10px solid var(--nso-accent-2);
+outline:4px solid var(--nso-border-1);
+outline-offset:-10px;
+box-sizing:border-box;
+height:97.5%
+}
+
+.typing_b88801,
+.typing_b88801.base_b88801.inTextChannel_b88801{
+    position:absolute;
+    top:-35px;
+}
+
+.chatGradient__36d07{
+    background:none;
+}
+
+.buttonContainer_e6e74f.app-launcher-entrypoint .button_e6e74f{
+  content: url(https://raw.githubusercontent.com/StollenTheAngel/NEEDY-DISCORD-OVERLOAD/52cddb5b38b3557334378c2cc57029064c21f0f7/theme%20resources/activities.png);
+  background: transparent;
+  width:20px;
+}
+
+.button__74017{
+    min-height:20px;
+    min-width:20px;
+}
+
+.buttonWrapper__24af7:hover svg{
+background: transparent;
+}
+
+.button__24af7:not(.noHover__24af7){
+    border-radius:0px;
+}
+
+.gifTag__9db5a,
+[aria-label="Open GIF picker"] {
+  background-image: url(https://raw.githubusercontent.com/StollenTheAngel/NEEDY-DISCORD-OVERLOAD/52cddb5b38b3557334378c2cc57029064c21f0f7/theme%20resources/icon_no_image.png);
+  background-size: contain;
+  color:transparent;
+  width: 21px;
+  height: 21px;
+}
+
+button:has(
+    [d=" M-7,-10 C-8.656999588012695,-10 -10,-8.656999588012695 -10,-7 C-10,-7 -10,7 -10,7 C-10,8.656999588012695 -8.656999588012695,10 -7,10 C-7,10 7,10 7,10 C8.656999588012695,10 10,8.656999588012695 10,7 C10,7 10,-7 10,-7 C10,-8.656999588012695 8.656999588012695,-10 7,-10 C7,-10 -7,-10 -7,-10z"]
+  ):hover,
+  #app-mount > div.appAsidePanelWrapper_a3002d > div > div.app_a3002d > div > div.layers__960e4.layers__160d8 > div > div > div > div.content__5e434 > div.page__5e434 > div > div > div.content_f75fb0 > main > form > div > div > div > div.scrollableContainer__74017.themedBackground__74017 > div > div.buttons__74017 > div:nth-child(2) > div > div:hover {
+  content: url(https://raw.githubusercontent.com/StollenTheAngel/NEEDY-DISCORD-OVERLOAD/52cddb5b38b3557334378c2cc57029064c21f0f7/theme%20resources/gif.png);
+  filter: saturate(5);
+  transition: 0.2s;
+  color: transparent;
+}
+
+.newMessagesBar__0f481.barBase__0f481{
+    background:var(--nso-border-1);
+    margin-top:6px;
+    width:995px;
+}
+
+/* TOOLTIPS */
+
+.tooltip_fa450d{
+background: var(--nso-accent-1) !important;
+border: 2px solid var(--nso-border-1);
+border-radius:5px
+}
+
+.caret__0b5f9{
+    visibility:hidden;
+}
+[class*="tooltip_"]::before,
+[class*="tooltip_"]::after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    transform: rotate(45deg);
+}
+
+[class*="tooltip_"]::before {
+    background-color: var(--nso-border-1) !important;
+    z-index: -1;    
+}
+
+[class*="tooltip_"]::after {
+    background-color: var(--nso-accent-1) !important; /* Must match the container background */
+    z-index: 1;  
+}
+
+[class*="tooltip_"]:has(.caret--bottom__0b5f9)::before { 
+    bottom: -5px; 
+    left: 50%; 
+    transform: translateX(-50%) rotate(45deg);
+}
+
+[class*="tooltip_"]:has(.caret--bottom__0b5f9)::after  { 
+    bottom: -3px; 
+    left: 50%; 
+    transform: translateX(-50%) rotate(45deg); 
+}
+
+[class*="tooltip_"]:has(.caret--top__0b5f9)::before { 
+    top: -5px; 
+    left: 50%; 
+    transform: translateX(-50%) rotate(45deg); 
+}
+[class*="tooltip_"]:has(.caret--top__0b5f9)::after { 
+    top: -3px; 
+    left: 50%; 
+    transform: translateX(-50%) rotate(45deg); 
+}
+
+[class*="tooltip_"]:has(.caret--right__0b5f9)::before { 
+    right: -5px; 
+    top: 50%; 
+    transform: translateY(-50%) rotate(45deg); 
+}
+
+[class*="tooltip_"]:has(.caret--right__0b5f9)::after  { 
+    right: -3px; 
+    top: 50%; 
+    transform: translateY(-50%) rotate(45deg); 
+}
+
+[class*="tooltip_"]:has(.caret--left__0b5f9)::before { 
+    left: -5px; 
+    top: 50%; 
+    transform: translateY(-50%) rotate(45deg); 
+}
+[class*="tooltip_"]:has(.caret--left__0b5f9)::after  { 
+    left: -3px; 
+    top: 50%; 
+    transform: translateY(-50%) rotate(45deg); 
+}
+
+/* BUTTONS */
+
+.button_a22cb0, .button_a22cb0.primary_a22cb0,
+.button_a22cb0:hover{
+    background:#f6e0f7;
+    border-top:2px solid #fefbfe;
+    border-left:2px solid #fefbfe;
+    border-bottom:2px solid #b493e8;
+    border-right:2px solid #815cdd;
+    color:#4d23cf;
+}
+
+.button_a22cb0:active, .button_a22cb0.primary_a22cb0:active{
+    background:#f6e0f7;
+    border-top:2px solid #815cdd;
+    border-left:2px solid #815cdd;
+    border-bottom:2px solid #fefbfe;
+    border-right:2px solid #fefbfe;
+    transition:none;
+}
+
+/* SEARCH */
+.container__8a031.size-lg__8a031.padding-size-sm__8a031{
+    background:var(--nso-bg-3);
+}
+
+.container__8a031.size-lg__8a031.padding-size-sm__8a031 .input_ac6cb0{
+    background:var(--nso-accent-5);
+    border-top:2px solid #bea6dc;
+    border-left:2px solid #bea6dc;
+    border-bottom:2px solid #f3e1f6;
+    border-right:2px solid #f3e1f6;
+    color:#ebb0e7;
+}
+
+.input_ac6cb0::placeholder{
+    color:#ebb0e7;
+}
+
+.header__71961{
+    color:var(--text-default);
+}
+
+.contentDefault__71961{
+    color:var(--text-default);
+}
+
+.result__71961[aria-selected=true]{
+    background:var(--nso-accent-6);
+}
+
+/* POPUP MENUS */
+.menu_c1e9c4, .buttonsInner__5126c.wrapper_f7ecac{
+    background:var(--nso-bg-5-low);
+    border-bottom:2px solid var(--nso-border-2);
+    border-right:2px solid var(--nso-border-2);
+}
+
+.colorDefault_c1e9c4, .colorDefault_c1e9c4 .label_c1e9c4,.colorDefault_c1e9c4.focused_c1e9c4{
+    color:var(--nso-text-default);
+}
+
