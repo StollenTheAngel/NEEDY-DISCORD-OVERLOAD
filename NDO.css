@@ -1,6 +1,6 @@
 /**
  * @name NEEDY DISCORD OVERLOAD
- * @author StollenTheAngel (angelicblades); some elements from NineX by Saltssaumure & 98.css by jdan
+ * @author StollenTheAngel (angelicblades); some elements from NineX by Saltssaumure (+ SaltThemeRevivalProject) & 98.css by jdan
  * @authorLink https://github.com/StollenTheAngel
  * @description Discord theme based on the 9x-inspired interface featured in NEEDY STREAMER OVERLOAD. 
  * @license AGPL-3.0-or-later
@@ -194,7 +194,18 @@ a[href="https://support.discord.com"] svg, #app-mount > div.appAsidePanelWrapper
   }
   
   .emptyCard__7e549{
+    content:url(https://raw.githubusercontent.com/StollenTheAngel/NEEDY-DISCORD-OVERLOAD/main/theme%20resources/bios_logo.png);
     background:transparent;
+    width: 237px !important;
+    padding: 0px;
+    border-radius: 0px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .emptyCard__7e549 h2,
+  .emptyCard__7e549 .emptyText__7e549{
+    color: transparent;
   }
 
 /* CHAT */
@@ -318,7 +329,7 @@ border-radius:5px
 }
 
 [class*="tooltip_"]::after {
-    background-color: var(--nso-accent-1) !important; /* Must match the container background */
+    background-color: var(--nso-accent-1) !important;
     z-index: 1;  
 }
 
@@ -442,18 +453,20 @@ actionButtons_e131a9 button:active,
     color:var(--nso-text-default);
 }
 
-.messagesPopoutWrap__432f4{
+.messagesPopoutWrap__432f4,
+.browser_d98031.container_d9c882{
     border-radius:0px;
     box-shadow:4px 4px #dbbeeda4;
     background:var(--nso-accent-2);
     border:2px solid var(--nso-border-1);
+    margin-top:4px;
 }
 .messagesPopoutWrap__432f4 .header__432f4{
     background:var(--nso-accent-2);
     border:none;
 }
 
-.messagesPopoutWrap__432f4 .header__432f4 .titleContainer__432f4{
+.messagesPopoutWrap__432f4 .header__432f4 .titleContainer__432f4, .header_d9c882{
     background:var(--nso-accent-1);
     color:var(--nso-text-default) !important;
     height:43px;
@@ -463,11 +476,18 @@ actionButtons_e131a9 button:active,
     border:3px solid var(--nso-border-1);
 }
 
+.header_d9c882{
+    margin-inline:auto;
+    left:0px;
+    width:430px;
+    margin-top:5px;
+}
+
 .titleContainer__432f4 .text-lg\/semibold_cf4812{
     color:var(--nso-text-default) !important;
 }
 
-.messagesPopoutWrap__432f4 .header__432f4 .titleContainer__432f4 svg{
+.messagesPopoutWrap__432f4 .header__432f4 .titleContainer__432f4 svg, .header_d9c882 .threadIcon_d9c882{
     background:url("https://raw.githubusercontent.com/StollenTheAngel/NEEDY-DISCORD-OVERLOAD/52cddb5b38b3557334378c2cc57029064c21f0f7/theme%20resources/windowbase_icon.png") !important;
     background-size:contain !important;
     width:24px;
@@ -476,10 +496,11 @@ actionButtons_e131a9 button:active,
     fill:transparent;
 }
 
-.messagesPopoutWrap__432f4 .messageGroupWrapper__432f4{
+.messagesPopoutWrap__432f4 .messageGroupWrapper__432f4, .browser_d98031.container_d9c882 .container__6764b{
     background:var(--nso-accent-3);
     border:3px solid var(--nso-border-1);
 }
+
 
 /* USER PANEL */
 .panels__5e434{
@@ -499,3 +520,10 @@ actionButtons_e131a9 button:active,
     margin-bottom:2px;
     border:3px solid var(--nso-border-1);
 }
+
+/* SETTINGS */
+.vc-special-card img[role="presentation"] {
+    content: url(https://raw.githubusercontent.com/StollenTheAngel/NEEDY-DISCORD-OVERLOAD/main/theme%20resources/that%20fucked%20up%20nso%20cat.png);
+    width: 80px;
+    height: 80px;
+  }
