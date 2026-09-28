@@ -173,10 +173,11 @@ a[href="https://support.discord.com"] svg, #app-mount > div.appAsidePanelWrapper
     overflow: auto !important;
   }
   
-  .peopleColumn__133bf .peopleList__5ec2f::-webkit-scrollbar-track-piece {
+  .peopleColumn__133bf .peopleList__5ec2f::-webkit-scrollbar-track{
     position: relative;
     background:/*#a1bece;*/ #c5e8fb;
     border-radius: 0px;
+    margin-bottom:0px;
   }
 
   .peopleColumn__133bf .peopleList__5ec2f::-webkit-scrollbar-thumb{
@@ -210,6 +211,14 @@ a[href="https://support.discord.com"] svg, #app-mount > div.appAsidePanelWrapper
 
 /* CHAT */
 
+.container__5e434{
+    --custom-chat-input-margin-bottom:2px;
+}
+
+.content_f75fb0{
+    background: var(--nso-accent-2);
+}
+
 .subtitleContainer_f75fb0{
     border:5px solid var(--nso-accent-2);
 }
@@ -222,6 +231,7 @@ a[href="https://support.discord.com"] svg, #app-mount > div.appAsidePanelWrapper
     color:#4d23cf !important;
 }
 
+
 .scroller__36d07{
 border:10px solid var(--nso-accent-2);
 outline:4px solid var(--nso-border-1);
@@ -229,6 +239,19 @@ outline-offset:-10px;
 box-sizing:border-box;
 height:97.5%
 }
+
+.scroller__36d07::-webkit-scrollbar-track{
+    position: relative;
+    background:/*#a1bece;*/ #c5e8fb;
+    border-radius: 0px;
+    margin-bottom:0px;
+}
+
+.scroller__36d07::-webkit-scrollbar-thumb{
+    background:/*#db8ed6;*/ #d586d5;
+    width:100%;
+}
+
 
 .formWithLoadedChatInput_f75fb0:before{
     background:transparent;
@@ -240,7 +263,7 @@ height:97.5%
     top:-35px;
 }
 
-.chatGradient__36d07, .chatTypingGradientAtBottom__36d07{
+.chatGradient__36d07, .chatTypingGradientAtBottom__36d07,.chatTypingGradientNotAtBottom__36d07{
     background:transparent;
 }
 
@@ -301,6 +324,41 @@ button:has(
     background:var(--nso-border-1);
     margin-top:6px;
     width:995px;
+}
+
+/* MEMBER LIST */
+.container_c8ffbb{
+    border-inline-start:none;
+    background:transparent;
+}
+
+.members_c8ffbb, [aria-label="Members"]{
+    background:var(--nso-bg-3);
+    border:4px solid var(--nso-border-1);
+    margin-right:2px;
+}
+
+.member_c8ffbb, .member_c8ffbb:hover{
+    background:#f6e0f7;
+    border-top:2px solid #fefbfe;
+    border-left:2px solid #fefbfe;
+    border-bottom:2px solid #b493e8;
+    border-right:2px solid #815cdd;
+    margin-bottom:2px;
+}
+
+.member_c8ffbb:active{
+    background:#f6e0f7;
+    border-top:2px solid #815cdd;
+    border-left:2px solid #815cdd;
+    border-bottom:2px solid #fefbfe;
+    border-right:2px solid #fefbfe;
+
+}
+
+.selected__91a9d .childContainer__91a9d, .clickable__91a9d:hover .childContainer__91a9d{
+    background-color:transparent !important;
+    color:var(--nso-text-default) !important;
 }
 
 /* TOOLTIPS */
